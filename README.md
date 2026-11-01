@@ -2,7 +2,7 @@
 
 ## Araştırma Konusu
 
-Bu araştırma, insanlar herhangi bir alanda sorun yaşadıklarında **müşteri temsilcisinden** mi yoksa **yapay zekâ destekli chatbottan** mı destek almayı tercih ettiğini ve bu tercihi hangi faktörlerin etkilediğini incelemektedir.
+İnsanların bir sorun yaşadıklarında **müşteri temsilcisi** veya **yapay zekâ destekli chatbotlardan** destek alma tercihlerini etkileyen faktörleri incelemek.
 
 ## Problem
 
@@ -95,16 +95,7 @@ Süreç, müşterinin sorununu bildirmesiyle başlar ve destek seçeneğini seç
 - `guvenPuani`, `yanitHiziPuani`, `cozumPuani`: güven, yanıt hızı ve sorun çözme (H3, H4)
 - `yas`, `teknolojiDuzeyi`: kullanıcı özellikleri (H5, H6)
 
-## Depo İçeriği
 
-```
-├── README.md
-├── Proje önerisi dosyası (.docx)
-└── diyagramlar/
-    ├── 01_use_case_diagram.png
-    ├── 02_activity_diagram.png
-    └── 03_class_diagram.png
-```
 
 ## Durum
 
