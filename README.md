@@ -50,7 +50,7 @@ Yapılan çalışmalar genel olarak şunu göstermektedir:
 | Kaynak | Lisans | İçerik | Bağlantı |
 |---|---|---|---|
 | Yatawara vd. (2025), Mendeley Data | CC BY 4.0 | Sri Lanka e-ticaret örneklemi; chatbot özellikleri, güven, memnuniyet, yaş ve alışveriş sıklığı | [Veri seti](https://data.mendeley.com/datasets/9fz3rrm3xj/2) |
-| Ramadhani vd. (2025), Zenodo | CC BY 4.0 | İnsan katkısının açıklanmasının müşteri güveni ve iletişim tarzına etkisi | [Veri seti](https://zenodo.org/records/15669281) |
+| Ramadhani vd. (2025), Zenodo | CC BY 4.0 | İnsan katkısının açıklanmasının müşteri güveni ve iletişim tarzına etkisi | [Veri seti](https://zenodo.org/records/15745343) |
 | Aweda-Akinuliola ve Odunewu (2026), Zenodo | Bağlantı sayfasındaki koşullar | Chatbot ve insan temsilci tercihini karşılaştıran çalışma (yalnızca yayımlanmış sonuçlar) | [Makale](https://zenodo.org/records/18816915) |
 | TÜİK, Yapay Zekâ İstatistikleri, 2026 | TÜİK kullanım koşulları | Yaş ve eğitim düzeyine göre yapay zekâ kullanım oranları | [Bülten](https://veriportali.tuik.gov.tr/tr/press/62066) |
 
@@ -97,6 +97,58 @@ Süreç, müşterinin sorununu bildirmesiyle başlar ve destek seçeneğini seç
 
 
 
+## Veri Analizi (Google Colab)
+
+Not defteri: [`361526102_Aysemanav_colab_musteri_hizmetleri.ipynb`](361526102_Aysemanav_colab_musteri_hizmetleri.ipynb)
+
+### Görev dağılımı
+
+**Grup:** Bireysel proje. Veri kaynaklarını belirleme, verileri hazırlama, Python ile toplam/ortalama hesaplama, grafik hazırlama ve yorumlama çalışmalarının tamamı bana aittir.
+
+### Veri kaynağı, lisans ve erişim
+
+| Veri kaynağı | Dosya | Lisans | Bağlantı / DOI | Katılımcı |
+|---|---|---|---|---|
+| Yatawara vd. (2025), Mendeley Data, Version 2 | `AI Chatbot Affordances and Purchase Intention Dataset.csv` | CC BY 4.0 | https://data.mendeley.com/datasets/9fz3rrm3xj/2 • DOI: 10.17632/9fz3rrm3xj.2 | 385 |
+| Ramadhani vd. (2025), Zenodo, Version v1 | `HID Impact - Suppl Material - Questionnaire Result Data.csv` | CC BY 4.0 | https://zenodo.org/records/15745343 • DOI: 10.5281/zenodo.15745343 | 297 |
+| TÜİK (2026), Yapay Zekâ İstatistikleri | Yayımlanmış resmî istatistik grafiği (yalnızca yüzde değerleri; dosya paylaşılmadı) | TÜİK kullanım koşulları, kaynak gösterilerek | https://veriportali.tuik.gov.tr/tr/press/62066 | - |
+
+- **Erişim tarihi:** 07.11.2026
+- **Yapılan değişiklik:** Mendeley ve Zenodo'daki orijinal Excel dosyaları Pandas ile CSV'ye dönüştürüldü. Satır, sütun ve değerlerde başka hiçbir değişiklik yapılmadı.
+- **Lisans metni:** https://creativecommons.org/licenses/by/4.0/
+- **Ölçü birimi:** Anket soruları 1–5 Likert puanıdır; TÜİK değerleri yüzdedir (%).
+- **Veri türü:** Gerçek, açık erişimli ikincil veri. Temsili veri kullanılmamıştır.
+- Ramadhani veri setinde yalnızca müşteri temsilcisiyle ilgili T1–T7 soruları analiz edildi.
+
+### Klasör yapısı
+
+```
+├── README.md
+├── 361526102_Aysemanav_colab_musteri_hizmetleri.ipynb   # Colab not defteri
+├── veri/                                                # İki anket veri seti (CSV)
+└── diyagramlar/                                         # UML diyagramları (Ödev 3)
+```
+
+### Nasıl çalıştırılır?
+
+1. Google Colab'da `Dosya → Not defterini yükle` ile `.ipynb` dosyasını açın.
+2. `Çalışma zamanı → Tümünü çalıştır` deyin.
+3. İstendiğinde `veri/` klasöründeki iki CSV dosyasını yükleyin.
+
+### Sonuç özeti
+
+- **Katılımcılar:** Yatawara'da %60.5 erkek, en kalabalık grup 18–29 yaş (%57.4); Ramadhani'de %58.2 kadın, en kalabalık grup 13–28 yaş (%56.9).
+- **Chatbot deneyimi (Yatawara vd.):** Ortalama puanlar 3.73 ile 3.94 arasında. En yüksek ortalama satın alma niyetinde (3.94), en düşük chatbotla etkileşime bağlılıkta (3.73); chatbota güven ortalaması 3.79.
+- **Müşteri temsilcisi (Ramadhani vd., T1–T7):** Yedi sorunun ortalaması 4.03 ile 4.18 arasında, hepsi birlikte 4.09. En yüksek puan "gerekli becerilere sahip olma" (4.18), en düşük "güvenilir olma" (4.03).
+- **TÜİK:** Türkiye'de üretken yapay zekâ kullanım oranı genelde %37.6; 16–24 yaşta %64.9, 65–74 yaşta %5.1. Yaş büyüdükçe oran düşüyor.
+- Bu aşamada yaş gruplarına göre karşılaştırma yapılmadı; yalnızca betimsel özet ve dağılım verildi. Grafik açıklamaları ve akademik yorum not defterinde (D ve E bölümleri) yer alıyor.
+
+### Sınırlılıklar
+
+İki veri setinde de "müşteri temsilcisi mi, chatbot mu tercih edersiniz?" sorusu olmadığı için tercih oranı hesaplanamadı. Chatbot ve temsilci ortalamaları farklı kişilere ve farklı sorulara ait olduğundan birbiriyle karşılaştırılmadı. Veriler Türkiye'de toplanmadı ve ortalamalar neden-sonuç ilişkisi kanıtlamaz.
+
+
 ## Durum
 
-Proje önerisi dosyası ve UML diyagramları (Use Case, Activity ve Class) bu depoya yüklenmiştir. 
+Proje önerisi dosyası, UML diyagramları (Use Case, Activity ve Class) , veri analizi (Colab not defteri ve veri dosyaları) bu depoya yüklenmiştir.
+
