@@ -107,15 +107,17 @@ Not defteri: [`361526102_Aysemanav_colab_musteri_hizmetleri.ipynb`](361526102_Ay
 
 ### Veri kaynağı, lisans ve erişim
 
-| Veri kaynağı | Dosya | Lisans | Bağlantı / DOI | Katılımcı |
+**Veri dosyaları bu depoya yüklenmemiştir.** Aşağıdaki kaynak sayfalarından indirilir.
+
+| Veri kaynağı | Kaynak sayfasındaki dosya | Lisans | Bağlantı / DOI | Katılımcı |
 |---|---|---|---|---|
-| Yatawara vd. (2025), Mendeley Data, Version 2 | `AI Chatbot Affordances and Purchase Intention Dataset.csv` | CC BY 4.0 | https://data.mendeley.com/datasets/9fz3rrm3xj/2 • DOI: 10.17632/9fz3rrm3xj.2 | 385 |
-| Ramadhani vd. (2025), Zenodo, Version v1 | `HID Impact - Suppl Material - Questionnaire Result Data.csv` | CC BY 4.0 | https://zenodo.org/records/15745343 • DOI: 10.5281/zenodo.15745343 | 297 |
-| TÜİK (2026), Yapay Zekâ İstatistikleri | Yayımlanmış resmî istatistik grafiği (yalnızca yüzde değerleri; dosya paylaşılmadı) | TÜİK kullanım koşulları, kaynak gösterilerek | https://veriportali.tuik.gov.tr/tr/press/62066 | - |
+| Yatawara vd. (2025), Mendeley Data, Version 2 | `AI Chatbot Affordances and Purchase Intention Dataset.xlsx` | CC BY 4.0 | https://data.mendeley.com/datasets/9fz3rrm3xj/2 • DOI: 10.17632/9fz3rrm3xj.2 | 385 |
+| Ramadhani vd. (2025), Zenodo, Version v1 | `HID Impact - Suppl Material - Questionnaire Result Data.xlsx` | CC BY 4.0 | https://zenodo.org/records/15745343 • DOI: 10.5281/zenodo.15745343 | 297 |
+| TÜİK (2026), Yapay Zekâ İstatistikleri | Yayımlanmış resmî istatistik grafiği (yalnızca yüzde değerleri; dosya kullanılmadı) | TÜİK kullanım koşulları, kaynak gösterilerek | https://veriportali.tuik.gov.tr/tr/press/62066 | - |
 
 - **Erişim tarihi:** 07.11.2026
-- **Yapılan değişiklik:** Mendeley ve Zenodo'daki orijinal Excel dosyaları Pandas ile CSV'ye dönüştürüldü. Satır, sütun ve değerlerde başka hiçbir değişiklik yapılmadı.
 - **Lisans metni:** https://creativecommons.org/licenses/by/4.0/
+- **Dosya biçimi:** Kaynak sayfalarındaki dosyalar Excel (`.xlsx`) biçimindedir; not defteri bunları Pandas ile CSV'ye çevirip CSV olarak okur (değerler değişmez).
 - **Ölçü birimi:** Anket soruları 1–5 Likert puanıdır; TÜİK değerleri yüzdedir (%).
 - **Veri türü:** Gerçek, açık erişimli ikincil veri. Temsili veri kullanılmamıştır.
 - Ramadhani veri setinde yalnızca müşteri temsilcisiyle ilgili T1–T7 soruları analiz edildi.
@@ -125,15 +127,14 @@ Not defteri: [`361526102_Aysemanav_colab_musteri_hizmetleri.ipynb`](361526102_Ay
 ```
 ├── README.md
 ├── 361526102_Aysemanav_colab_musteri_hizmetleri.ipynb   # Colab not defteri
-├── veri/                                                # İki anket veri seti (CSV)
 └── diyagramlar/                                         # UML diyagramları (Ödev 3)
 ```
 
 ### Nasıl çalıştırılır?
 
-1. Google Colab'da `Dosya → Not defterini yükle` ile `.ipynb` dosyasını açın.
-2. `Çalışma zamanı → Tümünü çalıştır` deyin.
-3. İstendiğinde `veri/` klasöründeki iki CSV dosyasını yükleyin.
+1. Veri dosyalarını kaynak sayfalarından indirin: [Yatawara vd. (Mendeley Data)](https://data.mendeley.com/datasets/9fz3rrm3xj/2) ve [Ramadhani vd. (Zenodo)](https://zenodo.org/records/15745343).
+2. Google Colab'da `Dosya → Not defterini yükle` ile `.ipynb` dosyasını açın ve `Çalışma zamanı → Tümünü çalıştır` deyin.
+3. İstendiğinde indirdiğiniz iki Excel dosyasını yükleyin; not defteri onları otomatik olarak CSV'ye çevirir.
 
 ### Sonuç özeti
 
@@ -147,8 +148,13 @@ Not defteri: [`361526102_Aysemanav_colab_musteri_hizmetleri.ipynb`](361526102_Ay
 
 İki veri setinde de "müşteri temsilcisi mi, chatbot mu tercih edersiniz?" sorusu olmadığı için tercih oranı hesaplanamadı. Chatbot ve temsilci ortalamaları farklı kişilere ve farklı sorulara ait olduğundan birbiriyle karşılaştırılmadı. Veriler Türkiye'de toplanmadı ve ortalamalar neden-sonuç ilişkisi kanıtlamaz.
 
+### Veri gizliliği ve lisans
+
+- Veri setleri GitHub'a yüklenmemiştir; kullanım, kaynak sayfalarındaki lisans koşullarına (CC BY 4.0) uygundur ve kaynak gösterilmiştir.
+- Veri setlerinde ad, soyad, e-posta, telefon, kimlik numarası, adres gibi kişisel bilgi bulunmuyor.
+- Depoda şifre, API anahtarı veya token yok; not defterinin çıktı hücreleri paylaşılmadan önce kontrol edildi.
 
 ## Durum
 
-Proje önerisi dosyası, UML diyagramları (Use Case, Activity ve Class) , veri analizi (Colab not defteri ve veri dosyaları) bu depoya yüklenmiştir.
+Proje önerisi dosyası, UML diyagramları (Use Case, Activity ve Class) ve veri analizi (Colab not defteri) bu depoya yüklenmiştir. Veri setleri depoya yüklenmemiştir; kaynak sayfalarından indirilir.
 
