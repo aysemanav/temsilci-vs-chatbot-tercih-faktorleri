@@ -51,7 +51,7 @@ Yapılan çalışmalar genel olarak şunu göstermektedir:
 |---|---|---|---|
 | Yatawara vd. (2025), Mendeley Data | CC BY 4.0 | Sri Lanka e-ticaret örneklemi; chatbot özellikleri, güven, memnuniyet, yaş ve alışveriş sıklığı | [Veri seti](https://data.mendeley.com/datasets/9fz3rrm3xj/2) |
 | Ramadhani vd. (2025), Zenodo | CC BY 4.0 | İnsan katkısının açıklanmasının müşteri güveni ve iletişim tarzına etkisi | [Veri seti](https://zenodo.org/records/15745343) |
-| Aweda-Akinuliola ve Odunewu (2026), Zenodo | Bağlantı sayfasındaki koşullar | Chatbot ve insan temsilci tercihini karşılaştıran çalışma (yalnızca yayımlanmış sonuçlar) | [Makale](https://zenodo.org/records/18816915) |
+| Aweda-Akinuliola ve Odunewu (2026), Zenodo |  CC BY 4.0 | Chatbot ve insan temsilci tercihini karşılaştıran çalışma (yalnızca yayımlanmış sonuçlar) | [Makale](https://zenodo.org/records/18816915) |
 | TÜİK, Yapay Zekâ İstatistikleri, 2026 | TÜİK kullanım koşulları | Yaş ve eğitim düzeyine göre yapay zekâ kullanım oranları | [Bülten](https://veriportali.tuik.gov.tr/tr/press/62066) |
 
 ## Yöntem ve Analiz Planı
