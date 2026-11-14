@@ -148,11 +148,7 @@ Not defteri: [`361526102_Aysemanav_colab_musteri_hizmetleri.ipynb`](361526102_Ay
 
 İki veri setinde de "müşteri temsilcisi mi, chatbot mu tercih edersiniz?" sorusu olmadığı için tercih oranı hesaplanamadı. Chatbot ve temsilci ortalamaları farklı kişilere ve farklı sorulara ait olduğundan birbiriyle karşılaştırılmadı. Veriler Türkiye'de toplanmadı ve ortalamalar neden-sonuç ilişkisi kanıtlamaz.
 
-### Veri gizliliği ve lisans
 
-- Veri setleri GitHub'a yüklenmemiştir; kullanım, kaynak sayfalarındaki lisans koşullarına (CC BY 4.0) uygundur ve kaynak gösterilmiştir.
-- Veri setlerinde ad, soyad, e-posta, telefon, kimlik numarası, adres gibi kişisel bilgi bulunmuyor.
-- Depoda şifre, API anahtarı veya token yok; not defterinin çıktı hücreleri paylaşılmadan önce kontrol edildi.
 
 ## Durum
 
