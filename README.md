@@ -122,13 +122,6 @@ Not defteri: [`361526102_Aysemanav_colab_musteri_hizmetleri.ipynb`](361526102_Ay
 - **Veri türü:** Gerçek, açık erişimli ikincil veri. Temsili veri kullanılmamıştır.
 - Ramadhani veri setinde yalnızca müşteri temsilcisiyle ilgili T1–T7 soruları analiz edildi.
 
-### Klasör yapısı
-
-```
-├── README.md
-├── 361526102_Aysemanav_colab_musteri_hizmetleri.ipynb   # Colab not defteri
-└── diyagramlar/                                         # UML diyagramları (Ödev 3)
-```
 
 ### Nasıl çalıştırılır?
 
